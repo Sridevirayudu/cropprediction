@@ -32,7 +32,7 @@ if not st.session_state.input_done:
     if st.button("🚀 Predict Crop, Yield & Fertilizer"):
         st.session_state.user_df = user_df
         st.session_state.input_done = True
-        st.experimental_rerun()
+        st.rerun()
 else:
     user_df = st.session_state.user_df
     pred_crop = le_crop.inverse_transform(crop_model.predict(user_df))[0]
