@@ -45,5 +45,5 @@ else:
 
     if st.button("🔁 Enter New Values"):
         st.session_state.input_done = False
-        st.experimental_rerun()
+        st.rerun()
 
